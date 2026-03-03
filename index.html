@@ -1,615 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+  
   <!-- SEO -->
-  <title>N&amp;N Poultry Palace | Fresh Table Eggs in Machakos</title>
-  <meta name="description"
-    content="Daily-collected fresh table eggs, ex-layer hens &amp; poultry manure. Delivered to homes &amp; businesses across Machakos. Order now or get a wholesale quote." />
-  <meta name="keywords"
-    content="fresh table eggs Machakos, buy eggs Kenya, wholesale eggs, ex-layer hens, poultry manure, N&amp;N Poultry Palace" />
-  <meta property="og:title" content="N&amp;N Poultry Palace | Fresh Table Eggs in Machakos" />
-  <meta property="og:description"
-    content="Daily-collected fresh table eggs delivered to homes &amp; businesses. Wholesale pricing available." />
-  <meta property="og:type" content="website" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.nnpoultrypalace.co.ke/" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Structured Data: LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FoodEstablishment",
-    "name": "N&N Poultry Palace Limited",
-    "description": "Family-run poultry supplier in Nairobi. Daily-collected fresh table eggs, ex-layer hens, and organic poultry manure for homes and businesses.",
-    "url": "https://www.nnpoultrypalace.co.ke/",
-    "telephone": "+254700000000",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Nairobi",
-      "addressCountry": "KE"
-    },
-    "openingHours": "Mo-Sa 06:00-18:00",
-    "servesCuisine": "Poultry Products",
-    "hasMap": "https://maps.google.com/?q=Nairobi+Kenya",
-    "sameAs": [
-      "https://wa.me/254700000000"
-    ]
-  }
-  </script>
-
-  <!-- Preconnect for Google Fonts -->
+  <title>N&N Poultry Palace | Premium Fresh Eggs & Poultry Products</title>
+  <meta name="description" content="Premium fresh table eggs, ex-layer hens & organic poultry manure. Farm-to-table quality delivered across Machakos. Experience the difference." />
+  <meta name="keywords" content="premium eggs Machakos, fresh table eggs Kenya, wholesale eggs, ex-layer hens, poultry manure, N&N Poultry Palace" />
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="dark-theme">
-
-  <div class="custom-cursor" id="cursor"></div>
-  <div class="custom-cursor-follower" id="cursor-follower"></div>
-
-  <!-- Background Image Sequence (Global) -->
-  <div class="hero-sequence-container global-background">
-    <canvas id="hero-sequence-canvas"></canvas>
-    <div class="hero-overlay"></div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════
-     HEADER / NAV
-═══════════════════════════════════════════ -->
-  <header class="site-header" id="site-header" role="banner">
-    <nav class="nav-inner" aria-label="Main navigation">
-      <!-- Logo -->
-      <a href="#hero" class="site-logo" aria-label="N&amp;N Poultry Palace — Go to homepage">
-        <img src="images/logo.png" alt="N&amp;N Poultry Palace Logo" class="logo-img" />
-        <div class="logo-text">
-          <span class="logo-name">N&amp;N Poultry Palace</span>
-          <span class="logo-sub">Fresh And Nutritious</span>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="images/logo.png" alt="N&N Poultry Palace" class="nav-logo" />
+        <div class="brand-text">
+          <span class="brand-name">N&N Poultry Palace</span>
+          <span class="brand-tagline">Premium Quality</span>
         </div>
-      </a>
-
-      <!-- Center nav -->
-      <ul class="nav-links" role="list">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#why-nn">About</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#order">Order</a></li>
-      </ul>
-
-      <!-- Right CTAs -->
-      <div class="nav-ctas">
-        <a href="#order" class="btn btn-primary btn-magnetic btn-sm">Order Fresh Eggs</a>
-        <a href="#order" class="btn btn-outline-gold btn-magnetic btn-sm">Wholesale Quote</a>
       </div>
-
-      <!-- Hamburger -->
-      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false"
-        aria-controls="mobile-nav">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-
-    <!-- Mobile Nav Drawer -->
-    <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
-      <a href="#hero">Home</a>
-      <a href="#products">Products</a>
-      <a href="#why-nn">About</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#order">Order</a>
-      <a href="#order" class="btn btn-primary btn-magnetic">🛒 Order Fresh Eggs</a>
-      <a href="#order" class="btn btn-outline-gold btn-magnetic">📋 Wholesale Quote</a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#why-choose" class="nav-link">Why Choose Us</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Order Now</a>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- ═══════════════════════════════════════════
-     HERO
-═══════════════════════════════════════════ -->
-  <section class="hero cinematic-hero" id="hero" aria-label="Hero — Fresh and Nutritious Eggs">
-
-    <!-- Content is now layered over the global background -->
-
-    <div class="container hero-container">
-      <div class="hero-content">
-        <div class="reveal reveal-delay-1">
-          <p class="hero-micro-headline"><span class="text-glow">●</span> Daily-collected &amp; Nutrient-rich</p>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-background">
+      <div class="hero-image">
+        <img src="images/hero_eggs_basket.png" alt="Fresh eggs in basket" />
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-text">
           <h1 class="hero-title">
-            Farm-Fresh <br />
-            <span class="text-outline">Nutritious</span> <br />
-            <span class="text-gold">Eggs</span>
+            <span class="title-line">Premium</span>
+            <span class="title-line highlight">Fresh Eggs</span>
+            <span class="title-line">Farm to Table</span>
           </h1>
           <p class="hero-description">
-            Collected at dawn, delivered by day. Experience the premium quality of farm-fresh eggs, hygienically handled
-            from our Machakos farm to your table.
+            Experience the finest quality eggs, collected daily from our Machakos farm. 
+            Delivering premium nutrition and unmatched freshness to homes and businesses across Kenya.
           </p>
-
-          <div class="hero-btn-row">
-            <a href="#order" class="btn btn-primary btn-magnetic" id="hero-order-cta">
-              🛒 Order Fresh Eggs
-            </a>
-            <a href="#order" class="btn btn-outline-gold btn-magnetic" id="hero-wholesale-cta">
-              📋 Wholesale Quote
-            </a>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-large">Order Fresh Eggs</a>
+            <a href="#about" class="btn btn-outline">Learn More</a>
           </div>
         </div>
       </div>
     </div>
-
+    
     <div class="scroll-indicator">
       <div class="scroll-line"></div>
-      <span>SCROLL TO DISCOVER</span>
+      <span>Scroll to explore</span>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-     PRODUCT FEATURE STRIP
-═══════════════════════════════════════════ -->
-  <section class="products-section" id="products" aria-label="Our Products">
+  <!-- About Section -->
+  <section class="about" id="about">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow"><span class="text-glow">●</span> Our Collection</span>
-        <h2>Three Products, <br /><span class="text-outline">One Trusted Source</span></h2>
-        <p>From day-collected table eggs to organic farm nutrients — everything you need from a supplier you can trust.
+      <div class="section-header">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">About N&N Poultry Palace</h2>
+        <p class="section-description">
+          A family-run heritage in Machakos, committed to delivering the highest quality 
+          poultry products with care, integrity, and excellence at every step.
         </p>
       </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1000+</span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Farm Fresh</span>
+            </div>
+          </div>
+          
+          <p class="about-paragraph">
+            N&N Poultry Palace represents three generations of poultry expertise. Our hens are raised 
+            with care in clean, well-ventilated environments, fed nutritious feed, and housed in 
+            facilities that prioritize their health and wellbeing.
+          </p>
+          
+          <p class="about-paragraph">
+            Every egg is collected at dawn, candled for quality, and packed in hygienic cartons 
+            before leaving our farm. This commitment to excellence has made us the trusted choice 
+            for families and businesses across Machakos and beyond.
+          </p>
+        </div>
+        
+        <div class="about-image">
+          <img src="images/lifestyle_hen_care.jpeg" alt="Farm worker caring for hens" />
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Why Choose Us Section -->
+  <section class="why-choose" id="why-choose">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Excellence</span>
+        <h2 class="section-title">Why Choose N&N Poultry Palace</h2>
+        <p class="section-description">
+          Our commitment to quality, freshness, and customer satisfaction sets us apart 
+          in the poultry industry.
+        </p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌅</div>
+          <h3 class="feature-title">Daily Fresh Collection</h3>
+          <p class="feature-description">
+            Eggs collected every morning at dawn and delivered the same day. 
+            Experience freshness you can taste in every bite.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">Strict Quality Control</h3>
+          <p class="feature-description">
+            Every egg is candled, graded, and packed in our clean facility. 
+            Full traceability from coop to your table.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h3 class="feature-title">Reliable Delivery</h3>
+          <p class="feature-description">
+            Same-day delivery for retail orders and scheduled bulk runs 
+            for wholesale partners. Always on time, every time.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3 class="feature-title">Premium Standards</h3>
+          <p class="feature-description">
+            Our hens are fed premium feed and housed in optimal conditions. 
+            The result is eggs of exceptional quality and nutrition.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">💚</div>
+          <h3 class="feature-title">Sustainable Practices</h3>
+          <p class="feature-description">
+            Environmentally conscious farming methods and organic 
+            waste management for a sustainable future.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3 class="feature-title">Trusted Partnership</h3>
+          <p class="feature-description">
+            Building long-term relationships with our customers through 
+            consistent quality and exceptional service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Products</span>
+        <h2 class="section-title">Premium Poultry Products</h2>
+        <p class="section-description">
+          From farm-fresh eggs to organic fertilizer, we provide quality products 
+          that meet the diverse needs of our customers.
+        </p>
+      </div>
+      
       <div class="products-grid">
-
-        <!-- Table Eggs -->
-        <article class="product-card reveal reveal-delay-1" aria-label="Table Eggs product">
-          <div class="product-card-image">
-            <img src="images/product_egg_carton.png" alt="Fresh brown table eggs in a 12-pack carton" loading="lazy" />
-            <span class="badge badge-gold">⭐ Primary Product</span>
+        <div class="product-card featured">
+          <div class="product-image">
+            <img src="images/product_egg_carton.png" alt="Fresh table eggs" />
+            <div class="product-badge">Featured</div>
           </div>
-          <div class="product-card-body">
-            <h3>Table Eggs</h3>
-            <p>Fresh eggs, daily-collected, sold by carton and bulk case — ideal for home cooks and food businesses.
-              Inspected and hygienically packed.</p>
-            <ul class="product-bullets" role="list">
-              <li>Available in 6, 12 &amp; 30-egg cartons</li>
-              <li>Bulk cases for commercial buyers</li>
-              <li>Inspected &amp; hygienically handled</li>
+          <div class="product-content">
+            <h3 class="product-title">Table Eggs</h3>
+            <p class="product-description">
+              Fresh, daily-collected eggs available in 6, 12, and 30-egg cartons. 
+              Perfect for home cooks and commercial kitchens.
+            </p>
+            <ul class="product-features">
+              <li>Daily collection at dawn</li>
+              <li>Candled and graded for quality</li>
+              <li>Available in multiple pack sizes</li>
+              <li>Bulk pricing for businesses</li>
             </ul>
-            <a href="#order" class="btn btn-primary btn-magnetic btn-sm">Order Eggs</a>
-          </div>
-        </article>
-
-        <!-- Ex-Layers -->
-        <article class="product-card reveal reveal-delay-2" aria-label="Ex-Layer Hens product">
-          <div class="product-card-image">
-            <img src="images/product_hen.png" alt="Healthy brown ex-layer hen in a clean coop" loading="lazy" />
-            <span class="badge badge-cream">🐔 Live Poultry</span>
-          </div>
-          <div class="product-card-body">
-            <h3>Ex-Layer Hens</h3>
-            <p>Healthy hens sold at end of laying cycle — suitable for meat use or rehoming. Inspected, well-fed, and
-              available for bulk purchase or individual sale.</p>
-            <ul class="product-bullets" role="list">
-              <li>Well-fed &amp; veterinary-inspected</li>
-              <li>Sold live for meat or rehoming</li>
-              <li>Bulk lots available for businesses</li>
-            </ul>
-            <a href="#order" class="btn btn-dark btn-magnetic btn-sm">Inquire Now</a>
-          </div>
-        </article>
-
-        <!-- Poultry Manure -->
-        <article class="product-card reveal reveal-delay-3" aria-label="Poultry Manure product">
-          <div class="product-card-image">
-            <img src="images/product_manure.png" alt="Bags of organic poultry manure fertilizer on a farm pallet"
-              loading="lazy" />
-            <span class="badge badge-cream">🌿 Organic</span>
-          </div>
-          <div class="product-card-body">
-            <h3>Poultry Manure</h3>
-            <p>Bagged organic fertilizer — nutrient-rich for gardens, farms, and commercial agriculture. Available in
-              bulk sacks for large-scale operations.</p>
-            <ul class="product-bullets" role="list">
-              <li>Rich in nitrogen &amp; phosphorus</li>
-              <li>Ideal for gardens &amp; commercial farms</li>
-              <li>Available in 25kg &amp; 50kg bulk sacks</li>
-            </ul>
-            <a href="#order" class="btn btn-dark btn-magnetic btn-sm">Inquire Now</a>
-          </div>
-        </article>
-
-      </div><!-- /.products-grid -->
-    </div><!-- /.container -->
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-     WHY N&N / TRUST
-═══════════════════════════════════════════ -->
-  <section class="trust-section" id="why-nn" aria-label="Why N&amp;N Poultry Palace">
-    <div class="container">
-
-      <div class="trust-grid">
-        <!-- Left: copy -->
-        <div class="trust-left reveal">
-          <span class="eyebrow"><span class="text-glow">●</span> The N&amp;N Standard</span>
-          <h2 style="color:#fff;">Quality &amp; Care <br /><span class="text-outline">At Every Step</span></h2>
-          <p>N&amp;N Poultry Palace is a family-run heritage in Machakos. We collect fresh eggs daily and deliver to
-            homes and businesses — maintaining the highest standards of hygiene and traceability from farm to your door.
-          </p>
-          <p>Our hens are raised with care, fed nutritious feed, and housed in clean, well-ventilated environments.
-            Every egg is gently handled, candled for quality, and packed in hygienic cartons before leaving the farm.
-          </p>
-
-          <div style="margin-top:2.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
-            <a href="#order" class="btn btn-primary btn-magnetic">Order Fresh Eggs</a>
-            <a href="#order" class="btn btn-outline-gold btn-magnetic">Wholesale Quote</a>
+            <a href="#contact" class="btn btn-primary">Order Now</a>
           </div>
         </div>
-
-        <!-- Right: image tiles -->
-        <div class="trust-right reveal reveal-delay-2">
-          <div class="trust-image-tile">
-            <img src="images/lifestyle_hen_care.jpeg"
-              alt="Farm worker collecting eggs in a well-maintained chicken coop" loading="lazy" />
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product_hen.png" alt="Ex-layer hens" />
           </div>
-          <div class="trust-image-tile">
-            <img src="images/lifestyle_packing.png"
-              alt="Eggs being carefully packed into clean cartons at the farm facility" loading="lazy" />
+          <div class="product-content">
+            <h3 class="product-title">Ex-Layer Hens</h3>
+            <p class="product-description">
+              Healthy hens at the end of their laying cycle, perfect for meat 
+              or rehoming. Veterinary inspected and well-fed.
+            </p>
+            <ul class="product-features">
+              <li>Veterinary inspected</li>
+              <li>Well-fed and healthy</li>
+              <li>Bulk lots available</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Inquire</a>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product_manure.png" alt="Poultry manure" />
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Poultry Manure</h3>
+            <p class="product-description">
+              Organic fertilizer rich in nitrogen and phosphorus. 
+              Perfect for gardens and commercial agriculture.
+            </p>
+            <ul class="product-features">
+              <li>Rich in nutrients</li>
+              <li>Organic and natural</li>
+              <li>25kg & 50kg bags available</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Inquire</a>
           </div>
         </div>
       </div>
-
-      <!-- Three pillars -->
-      <div class="trust-pillars">
-        <div class="trust-pillar reveal reveal-delay-1">
-          <span class="trust-pillar-icon" aria-hidden="true">🌅</span>
-          <h4>Farm-Fresh Daily</h4>
-          <p>Eggs collected each morning and delivered the same day. Freshness you can taste in every bite.</p>
-        </div>
-        <div class="trust-pillar reveal reveal-delay-2">
-          <span class="trust-pillar-icon" aria-hidden="true">🛡️</span>
-          <h4>Strict Hygiene &amp; Traceability</h4>
-          <p>Full chain of custody from coop to carton. Candled, graded, and packed in a clean facility every day.</p>
-        </div>
-        <div class="trust-pillar reveal reveal-delay-3">
-          <span class="trust-pillar-icon" aria-hidden="true">🚚</span>
-          <h4>Fast Local Delivery &amp; Bulk Fulfillment</h4>
-          <p>Same-day delivery for retail orders and scheduled bulk runs for wholesale partners — reliable, every time.
-          </p>
-        </div>
-      </div>
-
-    </div><!-- /.container -->
+    </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-     ORDER / CONTACT
- ═══════════════════════════════════════════ -->
-  <section class="order-section" id="order" aria-label="Place an order or contact us">
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
     <div class="container">
-      <div class="order-grid">
-
-        <!-- Left: intro & channels -->
-        <div class="order-intro reveal">
-          <span class="eyebrow">Order Now</span>
-          <div class="divider-gold"></div>
-          <h2 style="color:#fff;">Ready to Order? Get in Touch.</h2>
-          <p>Fill in the form, WhatsApp us, or call directly — we make ordering as easy as possible for both retail and
-            wholesale customers.</p>
-
-          <div class="order-channels">
-            <a href="#" class="order-channel" data-whatsapp data-product="Eggs" id="whatsapp-main-btn"
-              aria-label="Chat with N&amp;N Poultry Palace on WhatsApp" role="button">
-              <span class="order-channel-icon" aria-hidden="true">💬</span>
-              <div class="order-channel-info">
-                <strong>Chat on WhatsApp</strong>
-                <span>Fastest response — we reply within minutes</span>
-              </div>
-            </a>
-
-            <a href="tel:+254700000000" class="order-channel" id="phone-cta"
-              aria-label="Call N&amp;N Poultry Palace on phone">
-              <span class="order-channel-icon" aria-hidden="true">📞</span>
-              <div class="order-channel-info">
-                <strong>Call Us: +254 700 000 000</strong>
-                <span>Mon–Sat, 6:00 AM – 6:00 PM</span>
-              </div>
-            </a>
-          </div>
-
-          <!-- Business account CTA -->
-          <div class="business-cta-box reveal">
-            <h4>🏢 Open a Business Account</h4>
-            <p>Wholesale buyers can apply for credit invoicing and a dedicated account manager. Get volume discounts and
-              priority fulfillment.</p>
-            <a href="#order-form" class="btn btn-outline-gold btn-magnetic btn-sm">Apply for Business Account</a>
-          </div>
-        </div>
-
-        <!-- Right: form -->
-        <div class="order-form-wrap reveal reveal-delay-2">
-          <h3 class="form-title">📋 Place Your Order</h3>
-
-          <form id="order-form" novalidate aria-label="Order form">
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" placeholder="Jane Doe" required autocomplete="name"
-                  aria-label="Full name" aria-required="true" />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" placeholder="+254 712 345 678" required autocomplete="tel"
-                  aria-label="Phone number" aria-required="true" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email Address <span
-                  style="color:rgba(255,255,255,0.4);font-weight:400;">(optional)</span></label>
-              <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email"
-                aria-label="Email address (optional)" />
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="product">Product *</label>
-                <select id="product" name="product" required aria-label="Product selection" aria-required="true">
-                  <option value="" disabled selected>Select a product…</option>
-                  <option value="Eggs">Table Eggs</option>
-                  <option value="Ex-Layers">Ex-Layer Hens</option>
-                  <option value="Manure">Poultry Manure</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="quantity">Quantity *</label>
-                <input type="number" id="quantity" name="quantity" placeholder="e.g. 10 (cartons)" min="1" required
-                  aria-label="Quantity" aria-required="true" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="delivery_address">Delivery Address *</label>
-              <textarea id="delivery_address" name="delivery_address" placeholder="Street, area, Nairobi…" required
-                rows="2" aria-label="Delivery address" aria-required="true"></textarea>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="preferred_date">Preferred Delivery Date</label>
-                <input type="date" id="preferred_date" name="preferred_date"
-                  aria-label="Preferred delivery date (optional)" />
-              </div>
-              <div class="form-group">
-                <label for="order-type">Order Type</label>
-                <select id="order-type" name="order_type" aria-label="Order type">
-                  <option value="retail">Retail / Consumer</option>
-                  <option value="wholesale">Wholesale / Business</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Additional Notes</label>
-              <textarea id="message" name="message" placeholder="Special instructions, quantities, or questions…"
-                rows="3" aria-label="Additional notes or message (optional)"></textarea>
-            </div>
-
-            <div class="form-submit-row">
-              <button type="submit" class="btn btn-primary btn-magnetic" id="form-submit-btn"
-                aria-label="Submit your order">
-                🚀 Submit Order Request
-              </button>
-              <button type="button" class="btn btn-whatsapp" data-whatsapp data-product="Eggs"
-                aria-label="Send order via WhatsApp">
-                💬 WhatsApp
-              </button>
-            </div>
-
-          </form>
-
-          <!-- Success message -->
-          <div id="form-success" class="form-success" role="alert" aria-live="polite">
-            <div style="font-size:3rem;margin-bottom:0.75rem;">✅</div>
-            <h4>Thank You — Order Received!</h4>
-            <p>Thank you — we've received your request. A N&amp;N representative will confirm your order within 24
-              hours. You can also reach us instantly on WhatsApp.</p>
-            <a href="#" data-whatsapp data-product="my order" class="btn btn-whatsapp" style="margin-top:1rem;"
-              aria-label="Follow up on WhatsApp">
-              💬 Follow Up on WhatsApp
-            </a>
-          </div>
-
-        </div><!-- /.order-form-wrap -->
-      </div><!-- /.order-grid -->
-    </div><!-- /.container -->
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-     TESTIMONIALS
-═══════════════════════════════════════════ -->
-  <section class="testimonials-section" id="testimonials" aria-label="Customer testimonials">
-    <div class="container">
-
-      <div class="section-header reveal">
-        <span class="eyebrow"><span class="text-glow">●</span> Excellence Recognized</span>
-        <h2>Trusted by <br /><span class="text-outline">Homes &amp; Businesses</span></h2>
-        <p>From home cooks to restaurant owners — our customers choose N&amp;N for freshness they can count on, every
-          day.</p>
+      <div class="section-header">
+        <span class="section-label">Customer Stories</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-description">
+          Trusted by families and businesses across Kenya for our commitment 
+          to quality and exceptional service.
+        </p>
       </div>
-
+      
       <div class="testimonials-grid">
-
-        <!-- Testimonial 1: Home Consumer -->
-        <article class="testimonial-card reveal reveal-delay-1" aria-label="Testimonial from Wanjiru M.">
-          <div class="testi-stars" aria-label="5 out of 5 stars" role="img">
-            ★★★★★
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+              "I've been buying from N&N for over eight months and the eggs are consistently fresh. 
+              The yolks are bright and rich — you can really taste the difference from supermarket eggs."
+            </blockquote>
           </div>
-          <blockquote class="testi-quote">
-            I've been buying from N&amp;N for over eight months and the eggs are consistently fresh. The yolks are
-            bright and rich — you can really taste the difference from supermarket eggs. Delivery is always on time!
-          </blockquote>
-          <div class="testi-footer">
-            <div class="testi-person">
+          <div class="testimonial-author">
+            <div class="author-info">
               <strong>Wanjiru M.</strong>
               <span>Home Cook, Westlands</span>
             </div>
-            <span class="badge badge-verified">✓ Verified Buyer</span>
+            <div class="verified-badge">✓ Verified</div>
           </div>
-        </article>
-
-        <!-- Testimonial 2: Restaurant / B2B -->
-        <article class="testimonial-card reveal reveal-delay-2" aria-label="Testimonial from Chef Kamau J.">
-          <div class="testi-stars" aria-label="5 out of 5 stars" role="img">
-            ★★★★★
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+              "We switched our restaurant supply to N&N six months ago. Their wholesale pricing is fair, 
+              invoicing is professional, and I have never had a rejected batch."
+            </blockquote>
           </div>
-          <blockquote class="testi-quote">
-            We switched our restaurant supply to N&amp;N six months ago. Their wholesale pricing is fair, invoicing is
-            professional, and I have never had a rejected batch. Reliable and easy to work with — highly recommended for
-            any food business.
-          </blockquote>
-          <div class="testi-footer">
-            <div class="testi-person">
+          <div class="testimonial-author">
+            <div class="author-info">
               <strong>Chef Kamau J.</strong>
               <span>Restaurant Owner, Karen</span>
             </div>
-            <span class="badge badge-verified">✓ Verified Wholesale</span>
+            <div class="verified-badge">✓ Verified</div>
           </div>
-        </article>
-
-        <!-- Testimonial 3: Small business / B2C-B2B mix -->
-        <article class="testimonial-card reveal reveal-delay-3" aria-label="Testimonial from Amina S.">
-          <div class="testi-stars" aria-label="5 out of 5 stars" role="img">
-            ★★★★★
-          </div>
-          <blockquote class="testi-quote">
-            I run a small breakfast kiosk and N&amp;N's 30-egg trays have been a game-changer. Freshness every morning,
-            WhatsApp ordering is super convenient, and they even remind me before I run low. This is the kind of
-            supplier every small business needs.
-          </blockquote>
-          <div class="testi-footer">
-            <div class="testi-person">
-              <strong>Amina S.</strong>
-              <span>Breakfast Kiosk Owner, Ngong Road</span>
-            </div>
-            <span class="badge badge-verified">✓ Verified Buyer</span>
-          </div>
-        </article>
-
-      </div><!-- /.testimonials-grid -->
-
-      <!-- Social proof nudge -->
-      <div class="text-center mt-lg reveal">
-        <p style="color:var(--text-muted); font-size:0.9rem;">Join hundreds of satisfied customers across Nairobi.</p>
-        <div style="margin-top:1rem; display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
-          <a href="#order" class="btn btn-primary btn-magnetic">Order Fresh Eggs Now</a>
-          <a href="#order" class="btn btn-dark btn-magnetic">Get Wholesale Quote</a>
         </div>
-      </div>
-
-    </div><!-- /.container -->
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════════ -->
-  <footer class="site-footer" id="footer" role="contentinfo" aria-label="Site footer">
-
-    <!-- Closing CTA -->
-    <div class="footer-closing reveal">
-      <div class="container">
-        <p class="eyebrow"><span class="text-glow">●</span> Don't Wait</p>
-        <h2>Fresh eggs, fast delivery. <br /><span class="text-outline">Taste the difference.</span></h2>
-        <a href="#order" class="btn btn-primary btn-magnetic"
-          style="font-size:1.05rem; padding:1.2rem 3rem; margin-top:1rem;">
-          🛒 Order Fresh Eggs Now
-        </a>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+              "N&N's 30-egg trays have been a game-changer for my breakfast kiosk. 
+              WhatsApp ordering is convenient, and they remind me before I run low."
+            </blockquote>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <strong>Amina S.</strong>
+              <span>Business Owner, Ngong Road</span>
+            </div>
+            <div class="verified-badge">✓ Verified</div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
     <div class="container">
-      <div class="footer-grid">
-
-        <!-- Brand -->
-        <div class="footer-brand">
-          <h3>N&amp;N Poultry Palace</h3>
-          <p>A family-run poultry supplier in Machakos. We collect fresh eggs daily and deliver to homes and businesses.
-            We also supply ex-layer hens and organic poultry manure.</p>
-          <div class="social-links" role="list" aria-label="Social media links">
-            <a href="#" class="social-link" aria-label="Facebook" role="listitem">f</a>
-            <a href="#" class="social-link" aria-label="Instagram" role="listitem">ig</a>
-            <a href="#" class="social-link" aria-label="WhatsApp" role="listitem">wa</a>
-            <a href="#" class="social-link" aria-label="Twitter / X" role="listitem">𝕏</a>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="section-header">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="section-title">Ready to Order?</h2>
+            <p class="section-description">
+              Contact us today for fresh eggs, wholesale inquiries, or any questions 
+              about our premium poultry products.
+            </p>
+          </div>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">📞</div>
+              <div class="method-info">
+                <strong>Call Us</strong>
+                <span>+254 700 000 000</span>
+                <small>Mon-Sat, 6:00 AM - 6:00 PM</small>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">💬</div>
+              <div class="method-info">
+                <strong>WhatsApp</strong>
+                <span>Quick Response</span>
+                <small>Fastest way to reach us</small>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">✉️</div>
+              <div class="method-info">
+                <strong>Email</strong>
+                <span>orders@nnpoultrypalace.co.ke</span>
+                <small>For detailed inquiries</small>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">📍</div>
+              <div class="method-info">
+                <strong>Location</strong>
+                <span>Machakos, Kenya</span>
+                <small>Farm visits by appointment</small>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Quick Links -->
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul role="list">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#why-nn">About Us</a></li>
-            <li><a href="#packaging">Packaging</a></li>
-            <li><a href="#order">Order Now</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-          </ul>
+        
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" />
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="product">Product Interest</label>
+                <select id="product" name="product" required>
+                  <option value="">Select a product</option>
+                  <option value="eggs">Table Eggs</option>
+                  <option value="hens">Ex-Layer Hens</option>
+                  <option value="manure">Poultry Manure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" />
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+              <button type="button" class="btn btn-whatsapp" id="whatsapp-btn">
+                💬 WhatsApp Us
+              </button>
+            </div>
+          </form>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Contact -->
-        <div class="footer-col">
-          <h4>Contact Us</h4>
-          <ul class="footer-contact" role="list">
-            <li>
-              <span class="icon" aria-hidden="true">📞</span>
-              <a href="tel:+254700000000">+254 700 000 000</a>
-            </li>
-            <li>
-              <span class="icon" aria-hidden="true">💬</span>
-              <a href="#" data-whatsapp data-product="Eggs">WhatsApp Us</a>
-            </li>
-            <li>
-              <span class="icon" aria-hidden="true">✉️</span>
-              <a href="mailto:orders@nnpoultrypalace.co.ke">orders@nnpoultrypalace.co.ke</a>
-            </li>
-            <li>
-              <span class="icon" aria-hidden="true">📍</span>
-              <span>Machakos, Kenya</span>
-            </li>
-          </ul>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="N&N Poultry Palace" />
+            <div class="brand-text">
+              <span class="brand-name">N&N Poultry Palace</span>
+              <span class="brand-tagline">Premium Quality</span>
+            </div>
+          </div>
+          <p class="footer-description">
+            A family-run poultry supplier in Machakos, delivering premium fresh eggs 
+            and poultry products to homes and businesses across Kenya.
+          </p>
         </div>
-
-        <!-- Hours -->
-        <div class="footer-col">
-          <h4>Business Hours</h4>
-          <ul class="footer-hours" role="list">
-            <li style="color:rgba(255,255,255,0.5);font-size:0.85rem;">Mon – Friday: 6:00 AM – 6:00 PM</li>
-            <li style="color:rgba(255,255,255,0.5);font-size:0.85rem;">Saturday: 6:00 AM – 4:00 PM</li>
-            <li style="color:rgba(255,255,255,0.5);font-size:0.85rem;">Sunday: By appointment</li>
-          </ul>
-          <div class="badge badge-gold" style="margin-top:1rem; display:inline-flex;">🟢 Orders Open Today</div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#products">Table Eggs</a></li>
+              <li><a href="#products">Ex-Layer Hens</a></li>
+              <li><a href="#products">Poultry Manure</a></li>
+              <li><a href="#contact">Wholesale</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+              <li>+254 700 000 000</li>
+              <li>orders@nnpoultrypalace.co.ke</li>
+              <li>Machakos, Kenya</li>
+              <li>Mon-Sat: 6AM-6PM</li>
+            </ul>
+          </div>
         </div>
-
-      </div><!-- /.footer-grid -->
-
+      </div>
+      
       <div class="footer-bottom">
-        <p>&copy; <span id="footer-year">2026</span> N&amp;N Poultry Palace Limited. All rights reserved.</p>
-        <nav class="footer-legal" aria-label="Legal links">
+        <p>&copy; 2024 N&N Poultry Palace Limited. All rights reserved.</p>
+        <div class="footer-legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
-          <a href="#">Sitemap</a>
-        </nav>
+        </div>
       </div>
-    </div><!-- /.container -->
-
+    </div>
   </footer>
 
-  <!-- ─── JS ─── -->
-  <script src="main.js" defer></script>
-
+  <script src="main.js"></script>
 </body>
-
 </html>
