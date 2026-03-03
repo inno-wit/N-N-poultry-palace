@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { Star, Quote, CheckCircle } from 'lucide-react'
+import { Star, Quote, CircleCheck as CheckCircle } from 'lucide-react'
 
 const Testimonials = () => {
   const [isVisible, setIsVisible] = useState(false)
